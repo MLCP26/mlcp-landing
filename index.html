@@ -1,50 +1,257 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MLCP</title>
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLCP</title>
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
+<style>
 
-    img {
-      width: 100%;
-      border-radius: 12px;
-    }
+{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
-    video {
-      width: 100%;
-      margin-top: 20px;
-      border-radius: 12px;
-    }
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#0b0b0b;
+color:white;
+}
 
-    h1 {
-      margin-top: 25px;
-    }
-  </style>
+/ HEADER /
+
+.site-header{
+background:#000;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.header-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:16px 20px;
+}
+
+.header-logo{
+height:70px;
+}
+
+.main-nav a{
+color:white;
+text-decoration:none;
+margin:0 14px;
+font-weight:600;
+}
+
+.register-header{
+background:#e11b22;
+padding:10px 18px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/ HERO VIDEO /
+
+.hero{
+width:100%;
+overflow:hidden;
+background:black;
+}
+
+.hero video{
+width:100%;
+max-width:900px;
+margin:auto;
+display:block;
+border-radius:12px;
+}
+
+/ CONTENT /
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+text-align:center;
+}
+
+.section{
+margin-bottom:50px;
+}
+
+.section h2{
+margin-bottom:20px;
+font-size:1.6rem;
+}
+
+/ EVENT FLYER /
+
+.flyer{
+max-width:700px;
+width:100%;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/ REGISTER BUTTON /
+
+.register-btn{
+display:inline-block;
+padding:14px 26px;
+background:white;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+}
+
+/ SOCIAL ICONS /
+
+.socials{
+display:flex;
+justify-content:center;
+gap:24px;
+margin-top:20px;
+}
+
+.social-icon{
+width:44px;
+height:44px;
+transition:transform .2s;
+}
+
+.social-icon:hover{
+transform:scale(1.15);
+}
+
+/ FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+color:#999;
+font-size:.9rem;
+}
+
+@media(max-width:768px){
+
+.header-container{
+flex-direction:column;
+gap:10px;
+}
+
+.main-nav{
+margin-top:10px;
+}
+
+.main-nav a{
+margin:0 8px;
+}
+
+}
+
+</style>
 </head>
-<body>
-  <div class="container">
-    <img src="hero.jpg" alt="MLCP Logo">
-    
-    <video controls>
-      <source src="promo.mp4" type="video/mp4">
-    </video>
 
-    <h1>Major League Cup Pong</h1>
-    <p>Full platform launching soon.</p>
-  </div>
+<body>
+
+<header class="site-header">
+
+<div class="header-container">
+
+<img src="logo.png" class="header-logo">
+
+<nav class="main-nav">
+<a href="#">Home</a>
+<a href="#events">Events</a>
+<a href="#">Rules</a>
+<a href="#">Players</a>
+<a href="mailto:majorleaguecuppong@gmail.com">Contact</a>
+</nav>
+
+<a href="YOUR-REGISTRATION-LINK" class="register-header">
+Register
+</a>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<video autoplay muted loop playsinline>
+<source src="promo-video.mp4" type="video/mp4">
+</video>
+
+</section>
+
+
+<div class="container">
+
+<section class="section" id="events">
+
+<h2>Upcoming Event</h2>
+
+<img src="event-flyer.jpg" class="flyer">
+
+</section>
+
+
+<section class="section">
+
+<h2>Register Now</h2>
+
+<a href="https://share.scoreholio.com/Glr05SkCl1b" class="register-btn">
+Register Here
+</a>
+
+</section>
+
+
+<section class="section">
+
+<h2>Follow Us</h2>
+
+<div class="socials">
+
+<a href="https://www.instagram.com/majorleaguecuppong?igsh=OHdrZzA4OGxnMTRi&utm_source=qr" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="social-icon">
+</a>
+
+<a href="https://www.facebook.com/share/18Tw1tK1pr/?mibextid=wwXIfr" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="social-icon">
+</a>
+
+<a href="https://www.tiktok.com/@majorleaguecuppong?_r=1&_t=ZT-94Y1LnEcnvh" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" class="social-icon">
+</a>
+
+<a href="https://youtube.com/@mlcpong?si=WWpR_xzK7b_8U4ye" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="social-icon">
+</a>
+
+<a href="https://x.com/cdotjerseypong?s=21&t=gpi8nP02XAG-I94PcL0eVQ" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" class="social-icon">
+</a>
+
+</div>
+
+</section>
+
+</div>
+
+
+<footer>
+
+© 2026 MLCP
+
+</footer>
+
 </body>
 </html>
